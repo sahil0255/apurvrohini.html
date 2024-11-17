@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Special Moment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom styles for moment page */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #fff5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+            color: #ff2a68;
+            text-align: center;
+        }
+
+        /* Input for username */
+        #username-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #username {
+            font-size: 18px;
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: 2px solid #ff2a68;
+            text-align: center;
+        }
+
+        #submitBtn {
+            background-color: #ff2a68;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #submitBtn:hover {
+            background-color: #d01544;
+        }
+
+        /* Image gallery */
+        #photos {
+            display: none;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #photos img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        /* Audio */
+        #audio-player {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ff8b94;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Our Great Moment 💖</h1>
+        </header>
+
+        <section id="username-section">
+            <h2>Enter your name to see our great moment!</h2>
+            <input type="text" id="username" placeholder="Your Name" />
+            <button id="submitBtn">Submit</button>
+        </section>
+
+        <section id="photos">
+            <h2>Our Photos!</h2>
+    
+            <img src="c:\Users\APURVA\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\6B1209C215BC00ACEF87A8E84A67E62F\WhatsApp Image 2024-11-17 at 10.31.46_d9f6f07b.jpg" alt="Special Moment 2">
+            <img src="c:\Users\APURVA\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\9E6A4B0E1ED01007F6604ABD3E4D2163\WhatsApp Image 2024-11-17 at 10.31.48_18cf117c.jpg" alt="Special Moment 3">
+        </section>
+
+        <section id="audio-player">
+            <audio controls autoplay>
+                <source src="your-love-song.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ by Apurv</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", function() {
+            const username = document.getElementById("username").value.trim();
+            if (username) {
+                const showMoment = confirm(`${username}, would you like to see our special moment?`);
+                if (showMoment) {
+                    document.getElementById("photos").style.display = "block";
+                    document.getElementById("audio-player").style.display = "block";
+                } else {
+                    alert("Maybe next time!");
+                }
+            } else {
+                alert("Please enter your name.");
+            }
+        });
+    </script>
+</body>
+</html>

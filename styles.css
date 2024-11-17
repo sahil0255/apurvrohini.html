@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* Header */
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    color: #ff2a68;
+    text-align: center;
+    animation: bounceIn 2s;
+}
+
+/* Animation for Bouncing Text */
+@keyframes bounceIn {
+    0% { transform: translateY(-300px); opacity: 0; }
+    60% { transform: translateY(30px); opacity: 1; }
+    100% { transform: translateY(0); }
+}
+
+/* Navbar */
+#navbar {
+    background-color: #ff8b94;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#navbar a:hover {
+    background-color: #ff5766;
+}
+
+/* Countdown Timer */
+#countdownTimer {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff2a68;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Love Percentage Section */
+#love-percentage {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#lovePercentage {
+    font-size: 50px;
+    color: #ff2a68;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* FadeIn Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Love Message Generator Section */
+#love-message-generator {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#generateMessageBtn {
+    background-color: #ff2a68;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generateMessageBtn:hover {
+    background-color: #d01544;
+}
+
+.love-message {
+    font-size: 20px;
+    color: #ff2a68;
+    margin-top: 20px;
+}
+
+/* Where We Met Section */
+#where-we-met-btn {
+    font-size: 18px;
+    color: #ff2a68;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+#where-we-met-btn:hover {
+    color: #d01544;
+}
+
+/* Message Prompt Section */
+#messagePrompt {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#userMessage {
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 12px;
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid #ff2a68;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+#userMessage:focus {
+    border-color: #ff5766;
+    outline: none;
+}
+
+#sendMessageBtn {
+    background-color: #ff2a68;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#sendMessageBtn:hover {
+    background-color: #ff5766;
+}
+
+#messageResponse {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Why I Love You Section */
+#why-i-love-you {
+    margin-top: 40px;
+}
+
+#why-i-love-you ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+    color: #ff2a68;
+}
+
+#why-i-love-you li {
+    padding: 10px 0;
+}
+
+/* Love Games Section */
+#love-games {
+    background-color: #fce0e0;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#gameInput {
+    padding: 12px;
+    width: 70%;
+    border-radius: 5px;
+    border: 2px solid #ff2a68;
+    font-size: 18px;
+    text-align: center;
+}
+
+#checkGuessBtn {
+    background-color: #ff2a68;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#checkGuessBtn:hover {
+    background-color: #ff5766;
+}
+
+#gameFeedback {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ff8b94;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Smooth Transitions */
+* {
+    transition: all 0.3s ease;
+}
+
